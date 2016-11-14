@@ -1,0 +1,42 @@
+body {
+  font-family: "Arial";
+}
+
+.beginBox {
+  position:relative;;
+  margin-left: 100px;
+  height:300px;
+  width:300px;
+}
+.grayBox {
+  float:right;
+  position:relative;
+  background-color: #AAAAAA;
+  width: 500px;
+  height: 200px;
+}
+.blueBox {
+  position:relative;
+  background-color:#2020FF;
+  width:100px;
+  height:800px;
+  float:left;
+  z-index: 2;
+ }
+.yellowBox {
+  float:top;
+  text-align: center;
+  background-color: #EEEE00;
+  height:100px;
+  z-index: 1;
+}
+.afbeelding {
+  position:relative;
+  float:top;
+  padding-left:100px;
+}
+
+.rightText {
+  position:relative;
+  text-align:right;
+}

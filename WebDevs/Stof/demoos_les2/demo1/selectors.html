@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>selectors demo</title>
+	<style type="text/css">
+	#id1 {
+		font-size: 20px;
+		font-style:italic;
+		color: #FF0000;
+	}
+	.klasse1 {
+		font-weight: bolder;
+		font-size:16;
+	}
+	body {
+		background-color: #990099;
+		margin:auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="klasse1">
+		Dit is DIV1<br />
+		Dit is DIV1<br />
+		Dit is DIV1<br />
+		<div>
+			<span class="klasse1"> Dit is DIV2 </span><br />
+			Dit is DIV2<br />
+			Dit is DIV2<br />
+		</div>
+	</div>
+	<div>
+		Dit is DIV3<br />
+		Dit is DIV3<br />
+		Dit is DIV3<br />
+		<div>
+			<span class="klasse1">Dit is DIV4</span><br />
+			Dit is DIV4<br />
+			<span class="klasse1" id="id1">Dit is DIV4</span><br />
+		</div>
+	</div>
+</body>
+
+</html>

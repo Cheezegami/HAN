@@ -1,0 +1,99 @@
+﻿#container{
+  background-color	: maroon;
+  width			: 400px;
+  height		: 400px;
+  display		: block;
+  position		: relative;
+  top			: 0px;
+  left			: 0px;
+  color			: white;
+  padding-left  : 20px;
+}
+
+#main{
+  background-color	: green;
+  width			: 300px;
+  height		: 350px;
+  display		: block;
+  position		: static;
+  top			: 50px;
+  left			: 50px;
+}
+
+#subdiv1{
+  background-color	: red;
+  width			: 100px;
+  height		: 100px;
+  display		: block;
+  position		: static;
+  top			: 50px;
+  left			: 50px;
+}
+
+#subdiv2{
+  background-color	: blue;
+  width			: 100px;
+  height		: 100px;
+  display		: block;
+  position		: static;
+  top			: 50px;
+  left			: 50px;
+}
+body{
+  margin		: 0px 0px 0px 0px;
+  background-color	: lightblue;
+}
+#knoppen_main{
+  position		: absolute;
+  left			: 425px;
+  top			: 50px;
+  border		: 2px solid green;
+} 
+#knoppen_subdiv1{
+  position		: absolute;
+  left			: 425px;
+  top			: 150px;
+  border		: 2px solid red;
+}
+#knoppen_subdiv2{
+  position		: absolute;
+  left			: 425px;
+  top			: 250px;
+  border		: 2px solid blue;
+}
+#pmain,#psubdiv1,#psubdiv2{
+  font-size		: 1em;
+}
+h1,p{
+  padding		: 0px 0px 0px 0px;
+  margin		: 0px 0px 0px 0px;
+  border		: 0px 0px 0px 0px;
+}
+#toelichting{
+  background-color	: lightyellow;
+  position		: absolute;
+  left			: 650px;
+  top			: 50px;
+  border		: 2px solid blue;
+  color			: black;
+  width			: 500px;
+}
+h3{
+	margin:2px;
+}
+#leftCoor,#topCoor{
+	border:1px black solid;
+	color:purple;
+	font-weight:bold;
+	font-size:30px;
+}
+#titel{
+	height:50px;
+}
+#subtitel{
+	height:25px;
+}
+p,div{
+	cursor:crosshair;
+	
+}

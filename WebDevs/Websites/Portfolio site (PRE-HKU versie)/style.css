@@ -1,0 +1,204 @@
+body,html
+{
+margin: 0px 0px 0px 0px;
+font-family:"calibri";
+color:rgb(255,255,150);
+border-color:rgb(255,255,100);
+width: 100%;
+height: 100%;
+background-color:#553311;
+font-size:110%;
+}
+
+.blogBody {
+	color:rgb(175,255,255);
+	background-color:#224444;
+}
+
+.projectsBody {
+	color:#FFEEFF;
+	background-color:#403066;
+}
+.mijnHeader {
+	color:#FFFFAA;
+	text-align:center;
+	float:left;
+	width: 80%;
+	padding: 0px 10% 0px 10%;
+}
+
+.mijnLijst {
+    list-style-type: none;
+		display: inline;
+		padding:0;
+}
+
+.mijnBody {
+  padding: 15px 10% 15px 10%;
+}
+
+.footer {
+	padding: 2px 15px 2px 15px;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+.homelink {
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.bloglink {
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.projectslink {
+	text-decoration: none;
+	font-size: 24px;
+}
+
+#homeselect {
+	float:left;
+	color:#FFFF70;
+	background-color:#993320;
+	width: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin:0;
+	border-style:solid;
+}
+
+#home {
+	float:left;
+	color: #FFFF70;
+	background-color:#993320;
+	width: 200px;
+	margin:0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-style:solid;
+	border-color:#993320;
+}
+
+#blogselect {
+	float:left;
+	color:#70FFFF;
+	background-color:#339920;
+	width: 200px;
+	margin:0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-style:solid;
+}
+
+#blog {
+	float:left;
+	color:#70FFFF;
+	background-color:#339920;
+	width: 200px;
+	margin:0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-style:solid;
+	border-color:#339920;
+}
+
+#projectsselect {
+	float:left;
+	color:#FFEEFF;
+	background-color:#333399;
+	width: 200px;
+	margin:0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-style:solid;
+}
+
+#projects {
+	float:left;
+	color:#FFEEFF;
+	background-color:#333399;
+	width: 200px;
+	margin:0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-style:solid;
+	border-color:#333399;
+}
+
+#homeheaderid {
+ 	background-color:#993320;
+}
+#blogheaderid {
+	background-color:#339920;
+}
+#projectsheaderid {
+	background-color:#333399;
+}
+
+#homebodyid {
+	background-color:rgb(80,30,20);
+}
+#blogbodyid {
+	background-color:rgb(20,60,20);
+}
+#projectsbodyid {
+	background-color:#2A2A50;
+}
+
+#homefooterid {
+	background-color: #662211;
+}
+#blogfooterid {
+	background-color: #224444;
+}
+#projectsfooterid {
+	background-color: #403066;
+}
+
+
+#home:hover {
+	border-bottom-color: #FFFF70;
+}
+#blog:hover {
+	border-bottom-color: #70FFFF;
+}
+#projects:hover {
+	border-bottom-color: #FFEEFF;
+}
+
+a.dA:link {color:rgb(20,180,50);} /* Colors in which my DeviantArt link is being displayed.*/
+a.dA:visited	{color:rgb(20,180,100);}
+a.dA:hover	{color:rgb(0,225,180);}
+a.dA:active	{color:rgb(20,240,240);}
+
+a.tumblr:link {color:rgb(220,150,240);} /*colors in which my Tumblr link is being displayed. */
+a.tumblr:visited	{color:rgb(200,120,250);}
+a.tumblr:hover {color:rgb(230,150,200);}
+a.tumblr:active	{color:rgb(150,120,250);}
+
+a.reddit:link {color:rgb(100,150,240);}
+a.reddit:visited {color:rgb(150, 200, 250);}
+a.reddit:hover {color:rgb(120,200,255);}
+a.reddit:active {color:rgb(150,220,255);}
+
+a.terraria:link {color:rgb(120,200,50);}
+a.terraria:visited {color:rgb(100,220,100);}
+a.terraria:hover {color: rgb(150,230,75);}
+a.terraria:active {color: rgb(180,240,90);}
+
+a.starbound:link {color:rgb(220,140,40);}
+a.starbound:visited {color: rgb(230, 150, 50);}
+a.starbound:hover {color: rgb(230, 170, 80);}
+a.starbound:active {color: rgb(255,200,100);}
+
+a.twitter:link {color:rgb(50,150,250);}
+a.twitter:visited {color:rgb(75, 175, 255);}
+a.twitter:hover {color:rgb(0,200,255);}
+a.twitter:active {color:rgb(0,255,255);}
+
+hr
+{
+border-color:rgb(255,255,100);
+}

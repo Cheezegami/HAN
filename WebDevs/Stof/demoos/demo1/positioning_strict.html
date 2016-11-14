@@ -1,0 +1,111 @@
+<!DOCTYPE html >
+<html >
+  <head>
+    <meta charset="UTF-8" >		
+    <title>
+      Klassieke site
+    </title>
+    <link rel="stylesheet" type="text/css" href="positioning.css" />
+    <script language="JavaScript">
+      function change_main(status)
+      {
+        var d=document.getElementById("main");
+        var p=document.getElementById("pmain");
+        d.style.position=status;
+        p.innerHTML=status;
+      }
+      function change_subdiv1(status)
+      {
+        var d=document.getElementById("subdiv1");
+        var p=document.getElementById("psubdiv1");
+        d.style.position=status;
+        p.innerHTML=status;
+      }
+      function change_subdiv2(status)
+      {
+        var d=document.getElementById("subdiv2");
+        var p=document.getElementById("psubdiv2");
+        d.style.position=status;
+        p.innerHTML=status;
+      }
+      function MouseMov(event)
+      {
+      	var x=document.getElementById("leftCoor");
+      	var y=document.getElementById("topCoor");
+      	x.innerHTML=event.clientX;
+      	y.innerHTML=event.clientY;
+      }
+    </script> 
+  </head>
+  <body onmousemove="MouseMov(event)">
+    <div id="titel"><h1>Demo positioning (height=50)</h1></div>
+    <div id="container">
+      <p id="subtitel">DIT IS DE CONTAINER(height=25, padding-left=20)<p/>
+      <div id="main">
+        <p id="subtitel">Dit is de main div(height=25)--<span id="pmain">static</span></p>
+          
+        <div id="subdiv1">
+          <p>dit is subdiv1</p>
+          <p id="psubdiv1">static</p>
+        </div>
+        <div id="subdiv2">
+          <p>dit is subdiv2</p>
+          <p id="psubdiv2">static</p>
+        </div>
+      </div>
+    </div>
+    <div id="knoppen_main">
+      <input type="button" value="Main->STATIC" onclick="change_main('static');" /><br /> 
+      <input type="button" value="Main->RELATIVE" onclick="change_main('relative');" /><br /> 
+      <input type="button" value="Main->ABSOLUTE" onclick="change_main('absolute');" /><br /> 
+      <input type="button" value="Main->FIXED" onclick="change_main('fixed');" /> 
+    </div>
+    <div id="knoppen_subdiv1">
+      <input type="button" value="Subdiv1->STATIC" onclick="change_subdiv1('static');" /><br /> 
+      <input type="button" value="Subdiv1->RELATIVE" onclick="change_subdiv1('relative');" /><br /> 
+      <input type="button" value="Subdiv1->ABSOLUTE" onclick="change_subdiv1('absolute');" /><br /> 
+      <input type="button" value="Subdiv1->FIXED" onclick="change_subdiv1('fixed');" /> 
+    </div>
+    <div id="knoppen_subdiv2">
+      <input type="button" value="Subdiv2->STATIC" onclick="change_subdiv2('static');" /><br /> 
+      <input type="button" value="Subdiv2->RELATIVE" onclick="change_subdiv2('relative');" /><br /> 
+      <input type="button" value="Subdiv2->ABSOLUTE" onclick="change_subdiv2('absolute');" /><br /> 
+      <input type="button" value="Subdiv2->FIXED" onclick="change_subdiv2('fixed');" /> 
+    </div>
+    <div id="toelichting">
+      <p><h3>Static</h3></p>
+      <p>
+        Een element schikt zich gewoon naar de plaats waar hij volgens de 
+        default van de browser zou moeten komen te staan.
+      </p>  
+      <p><h3>Relative</h3></p>
+      <p>
+        Een element schikt zich op de plek waar hij zou staan als hij STATIC was en
+        het (0,0)-punt de linkerbovenhoek was. De attributen top en left bepalen in hoeverre zijn
+        linkerbovenhoek zich dan verplaatst t.o.v. dit nulpunt.<br /> 
+        Andere objecten doen echter nog steeds als of het element op zijn 
+        oorspronkelijke plek staat.
+      </p>
+      <p><h3>Absolute</h3></p>
+      <p>
+        Een element verplaatst zich het zelfde als bij RELATIVE. Het nulpunt
+        is nu het eerste parent-object in de boom dat NIET STATIC is.(tricky)<br />
+        Andere elementen nemen dit element nu niet meer waar. Voor de positionering 
+        van andere elementen doet deze niet meer mee.
+      </p>
+      <p><h3>Fixed</h3></p>
+      <p>
+        Idem als bij RELATIVE en ABSOLUTE maar nu is het nulpunt de linkerbovenhoek
+        van de browser.<br />
+        Andere elementen nemen dit object nu niet meer waar. Voor de positionering 
+        van andere elementen doet deze niet meer mee.
+      </p> 
+      <p>
+      	<h3>NB: left en top zijn overal ingesteld op 50px</h3>
+      </p>
+      <p>
+      	<h3>left:<span id="leftCoor">x</span>---top:<span id="topCoor">y</span></h3>
+      </p>
+    </div>
+ </body>
+</html>

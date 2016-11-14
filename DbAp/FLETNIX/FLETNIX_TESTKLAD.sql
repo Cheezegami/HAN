@@ -1,0 +1,15 @@
+SELECT * FROM Movie
+SELECT * FROM Person
+SELECT * FROM Movie_Cast
+SELECT * FROM Genre
+SELECT * FROM Movie_Genre
+SELECT * FROM Customer
+SELECT * FROM Watchhistory
+
+DELETE FROM Movie
+DELETE FROM Person
+DELETE FROM Movie_Cast
+DELETE FROM Genre
+DELETE FROM Movie_Genre
+DELETE FROM Customer
+DELETE FROM Watchhistory

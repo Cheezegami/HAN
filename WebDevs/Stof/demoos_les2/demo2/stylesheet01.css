@@ -1,0 +1,35 @@
+﻿body{
+	/* TYPE SELECTOR  */
+	background-color:green;
+}
+img {
+	/* TYPE SELECTOR  */
+	width: 300px;
+}
+.tekstdiv {
+	/* CLASS SELECTOR */
+	border: 10px;
+	border-color: blue;
+	border-style: solid;
+	margin: 30px;
+}
+#div1 {
+	/* ID SELECTOR */      
+	background-color: aqua;
+}
+#div2 {
+	/* ID SELECTOR */       
+	background-color: orange;
+}
+#div3 {
+	/* ID SELECTOR */
+	border: 20px;
+	background-color:yellow;
+	border-color: black;
+	border-style: dashed;
+	padding: 30px;
+}
+img:hover{
+	/* PSEUDO CLASS SELCTOR */
+	width:600px;
+}

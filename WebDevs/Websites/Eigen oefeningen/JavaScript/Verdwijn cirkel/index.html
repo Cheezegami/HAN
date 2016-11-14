@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test</title>
+		<meta charset="utf-8" /> <!-- uses the utf-8 character set to encode the characters -->
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" /> <!-- further specifies the characters and content used -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- usability for mobile devices -->
+		<style>
+			body {
+				background-color:#222222;
+			}
+			#cirkel	{
+				height:300px;
+				width:300px;
+				background-color: yellow;
+				border-radius:150px;
+			}
+			#vierkant {
+				height:300px;
+				width:300px;
+				background-color: purple;
+			}
+			#blauw {
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id ="cirkel"></div>
+		<script type="text/javascript">
+			var cirkel = document.getElementById("cirkel");
+			var vierkant = document.getElementById("vierkant");
+
+			cirkel.onclick=function() {
+			if(cirkel.id == "vierkant") {cirkel.id = "cirkel";}
+			else {cirkel.id = "vierkant"}
+			}
+		</script>
+	</body>
+	</html>
